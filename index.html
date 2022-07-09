@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!----------------------------------------------------------------------------------->
+
+    <!-- Navbar -->
+    <div class="NavBar">
+        <div class="container-fluid" id="navbar">
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <img src="images/siva.jpg" alt="icon" class="Navicon">
+                    <a class="navbar-brand text-white" href="index.html">Siva Ezhumalai</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span>
+                            <!--  class="navbar-toggler-icon" -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title m-auto" id="offcanvasNavbarLabel">Siva Ezhumalai</h5>
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body gradient-border">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#home"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                        </svg> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#gallery"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" fill="currentColor" class="bi bi-columns-gap"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z" />
+                                        </svg> Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#about"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" fill="currentColor" class="bi bi-soundwave"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+                                        </svg> About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contacts
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="https://www.instagram.com/siva_ezhumalai_2002/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                </svg> Instagram</a></li>
+                                        <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100010964354732" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                </svg> FaceBook</a></li>
+                                        <li><a class="dropdown-item" href="mailto:sivaezhumalai2002@gmail.com"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                </svg> E-Mail</a></li>
+                                        <li><a class="dropdown-item" href="contact.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                                </svg> Contact Form</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- Navbar -->
+
+    <!----------------------------------------------------------------------------------->
+
+    <!-- Home -->
+
+    <div id="home container-fluid">
+        <div class="back-img">
+            <div class="back-text">
+                <!-- <h1><span>I<br>Am<br>Siva</span></h1> -->
+                <div class="container-fluid headingText">
+                    <div class='console-container'><span id='text'></span>
+                        <div class='console-underscore' id='console'>&#95;</div>
+                    </div>
+                    <!-- <p>i am a Web Developer</p> -->
+                    <a href="#gallery" class="btn back-button btn-lg" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+
+    <!----------------------------------------------------------------------------------->
+
+    <!-- Gallery -->
+
+    <!-- <div class="gallery">
+        <div class="container-fluid" id="gallery">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/pic_3.jpg" class="d-block w-100" alt="Slide_1">
+                        <div class="carousel-caption slide-text">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/pic_2.jpg" class="d-block w-100" alt="Slide_2">
+                        <div class="carousel-caption slide-text">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/pic_1.jpg" class="d-block w-100" alt="Slide_3">
+                        <div class="carousel-caption slide-text">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container Gallery" id="gallery">
+        <div class="gallery">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/pic_3.jpg" class="d-block w-100" alt="Slide one">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-3">Learning</h5>
+                            <p>i was learning everthing by every day, minutes, second..learning somethign is intersting
+                                and teaching us new things to develop our knowledge and skills.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/pic_2.jpg" class="d-block w-100" alt="Slide Second">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-3">Searching</h5>
+                            <p>We are all searching for something for many purpose but at that time we are all facing so
+                                much things and they are all teaching some lesons to us to lead our life better..</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/pic_1.jpg" class="d-block w-100" alt="Slide Three">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-3">Failers</h5>
+                            <p>We all are facing lot of failers every time and that will gives some lesons to get sucess
+                                in our life....Failer is the only way to achive sucess...</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+
+    <!----------------------------------------------------------------------->
+
+    <!-- About -->
+
+    <div class="container-fluid" id="about">
+        <div class="card-sec d-flex justify-content-around">
+            <div class="card" style="width:280px; height: 520px">
+                <img class="card-img-top align-content-center m-auto" src="images/card_1.png" alt="Card One"
+                    style="width:250px; height: 250px;">
+                <div class="card-body text-center">
+                    <h4 class="card-title h4">HTML</h4>
+                    <p class="card-text">I was started learning HTML. And this website was created by HTML code....you
+                        want to learn HTML click the below button...
+                    </p>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-primary">Click
+                        Here</a>
+                </div>
+            </div>
+            <div class="card" style="width:280px; height:520px">
+                <img class="card-img-top align-content-center m-auto" src="images/card_2.png" alt="Card Two"
+                    style="width:250px; height: 250px;">
+                <div class="card-body text-center">
+                    <h4 class="card-title h4">CSS</h4>
+                    <p class="card-text">I was started learning CSS. And this website was created by CSS Style
+                        code....you
+                        want to learn CSS click the below button...
+                    </p>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="btn btn-primary">Click
+                        Here</a>
+                </div>
+            </div>
+            <div class="card" style="width:280px; height:520px">
+                <img class="card-img-top align-content-center m-auto" src="images/card_3.png" alt="Card Three"
+                    style="width:250px; height: 250px;">
+                <div class="card-body text-center">
+                    <h4 class="card-title h4">Bootstrap</h4>
+                    <p class="card-text">I was started learning Bootstrap. And this website was created by Bootstrap
+                        code....you want to learn Bootstrap click the below button...
+                    </p>
+                    <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank"
+                        class="btn btn-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mt-4 p-3 bg-primary text-white rounded text-center">
+                <h1 class="display-5">ABOUT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, qui ut fugit reiciendis officiis quam
+                    atque aliquam, culpa in libero molestiae? Modi ipsum recusandae eaque veritatis iure asperiores
+                    libero vero.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat quisquam est fuga,
+                    voluptatibus, ab et consectetur deserunt eos quod fugit ea eius animi recusandae, voluptatem ducimus
+                    labore dolore non!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <!--------------------------------------------------------------------------------->
+
+    <!-- Footer -->
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright :
+            <a href="index.html"> Siva Ezhumalai</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!--------------------------------------------------------------------------------->
+
+</body>
+
+<!--------------------------------------------------------------------->
+
+<!-- Home Intro Text script -->
+
+<script>
+
+    // function([string1, string2],target id,[color1,color2])    
+    consoleText(['Hello World.', 'I Am Siva.', 'Web Developer.', 'Programmer.', 'Made This Website.'], 'text', ['#8E3200', '#361500', '#8E3200', '#361500', '#8E3200']);
+
+    function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ['#fff'];
+        var visible = true;
+        var con = document.getElementById('console');
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id)
+        target.setAttribute('style', 'color:' + colors[0])
+        window.setInterval(function () {
+
+            if (letterCount === 0 && waiting === false) {
+                waiting = true;
+                target.innerHTML = words[0].substring(0, letterCount)
+                window.setTimeout(function () {
+                    var usedColor = colors.shift();
+                    colors.push(usedColor);
+                    var usedWord = words.shift();
+                    words.push(usedWord);
+                    x = 1;
+                    target.setAttribute('style', 'color:' + colors[0])
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (letterCount === words[0].length + 1 && waiting === false) {
+                waiting = true;
+                window.setTimeout(function () {
+                    x = -1;
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (waiting === false) {
+                target.innerHTML = words[0].substring(0, letterCount)
+                letterCount += x;
+            }
+        }, 120)
+        window.setInterval(function () {
+            if (visible === true) {
+                con.className = 'console-underscore hidden'
+                visible = false;
+
+            } else {
+                con.className = 'console-underscore'
+
+                visible = true;
+            }
+        }, 400)
+    }
+
+</script>
+
+<!-- Home Intro Text script -->
+
+<!--------------------------------------------------------------------->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</html>
